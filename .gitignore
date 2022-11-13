@@ -1,5 +1,11 @@
+# modules
 node_modules
 package.json
 package-lock.json
+# -------------------
+
+
+# https://replit.com/
 replit.nix
 .replit
+# -------------------
