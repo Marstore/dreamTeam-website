@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+*{
+    margin: auto;
+    padding: auto;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+body {
+    background: #000000;
+    background: linear-gradient(0deg, rgb(230, 2, 255) 0%, rgb(47, 64, 255) 80%);
+    opacity: 80%;
+    padding: 40px;
+    
+    
+}
+table {
+    height: center auto;
+    width: 100%;
+    margin: auto;
+    color: #fff;
+    background-color: rgba(36, 36, 36, 0.37);
+    border:1px solid rgb(0, 0, 0);
+  
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+     
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+ }
+ 
+ /* link que foi visitado */
+ a:visited {
+     color: rgb(255, 255, 255);
+ }
+ 
+ /* mouse over */
+ a:hover {
+     color: #000000;
+ }
+ 
+ /* link selecionado */
+ a:active {
+     color: rgb(0, 68, 255);
+ }
+
+img {
+    height: 70px;
+    width: 70px;
+}
