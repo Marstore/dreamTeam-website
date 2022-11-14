@@ -10,6 +10,17 @@
 }
 
 
+@media (max-width: 720px) {
+    img {
+        text-align: center;
+        width: 220px;
+        height: 340px;
+        padding: 15px;
+        position: fixed;
+        
+    }
+}
+
 @media (max-width: 412px) {
     img {
         text-align: center;
