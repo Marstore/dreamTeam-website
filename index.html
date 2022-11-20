@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://media.discordapp.net/attachments/1029188254509039736/1041527838697857076/icon-144_x144px.png">
+  <title>DreamTeam</title>
+</head>
+
+
+<body>
+    <script>setTimeout(function() {
+        window.location.href = "/home";
+    }, 5);</script>
+    
+    <div class="container">
+  
+        <div class="canvas canvas1">
+          <div class="spinner1 spinnerMax">
+            <div class="spinner1 spinnerMid">
+              <div class="spinner1 spinnerMin"></div>
+            </div>
+          </div>
+        </div>
+
+    
+
+        <style>body {
+            background: #ffffff;
+            background-size: cover;
+            margin: 0;
+            padding-top: 5em;
+            padding-bottom: 5em;
+          }
+          
+          .container {
+            display: flex;
+            flex-wrap: wrap;
+           
+            justify-content: space-around;
+            margin: 0 auto;
+            max-width: 650px;
+            min-width: 200px;
+          }
+          
+          .canvas {
+            align-items: center;
+            background: #ffffff;
+            border-radius: 50%;
+            
+            display: flex;
+            height: 10em;
+            justify-content: center;
+            margin: 1em 1em 2em 1em;
+            width: 10em;
+          }
+          
+          /* Spinner 1 starts here */
+          .spinner1 {
+            align-items: center;
+            border: .3em solid transparent;
+            border-top: .3em solid #000000;
+            border-right: .3em solid #000000;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+          }
+          
+          .spinnerMax {
+            animation: spinnerOne 3s linear infinite;
+            height: 3em;
+            width: 3em;
+          }
+          
+          .spinnerMid {
+            animation: spinnerOne 5s linear infinite;
+            height: 2.4em;
+            width: 2.4em;
+          }
+          
+          .spinnerMin {
+            animation: spinnerOne 5s linear infinite;
+            height: 1.8em;
+            width: 1.8em;
+          }
+          
+          @keyframes spinnerOne {
+            0% {
+              transform: rotate(0deg)
+            }
+            100% {
+              transform: rotate(360deg)
+            }
+          }
+          /* Spinner 1 ends here */
+          
+          /* Spinner 2 starts here */
+          .canvas2 {
+            position: relative;
+          }
+          
+          .spinner2 {
+            animation: spinnerTwo 1s linear infinite;
+            background: #000000;
+            border-radius: 100px;
+            height: 3em;
+            transform-origin: top;
+            position: absolute;
+            top: 50%;
+            width: .22em;
+          }
+          
+          .hourHand {
+            animation: spinnerTwo 7s linear infinite;
+            background: #000000;
+            border-radius: 100px;
+            height: 2em;
+            transform-origin: top;
+            position: absolute;
+            top: 50%;
+            width: .2em;
+          }
+          
+          .dot {
+            background: #000000;
+            border-radius: 100%;
+            height: .5em;
+            width: .5em;
+          }
+          
+          @keyframes spinnerTwo {
+            0% {
+              transform: rotate(0deg)
+            }
+            100% {
+              transform: rotate(360deg)
+            }
+          }
+          /* Spinner 2 ends here */
+          
+          /* Spinner 3 starts here */
+          .spinner3 {
+            animation: spinnerThree 1s linear infinite;
+            background: #000000;
+            border-radius: 100%;
+            width: 3em;
+            height: 3em;
+          }
+          
+          @keyframes spinnerThree {
+            0%, 35% {
+              background: #000000;
+              transform: scale(1);
+            }
+            20%, 50% {
+              background: #000000;
+              transform: scale(1.3);
+            }
+          }
+          /* Spinner 3 ends here */
+          
+          /* Spinner 4 starts here */
+          .spinner4 {
+            animation: spinnerFour 1s linear infinite;
+            border: solid 7px transparent;
+            border-top: solid 7px #000000;
+            border-radius: 100%;
+            width: 3em;
+            height: 3em;
+          }
+          
+          @keyframes spinnerFour {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+          /* Spinner 4 ends here */
+          
+          /* Spinner 5 starts here */
+          .spinner5 {
+            animation: spinnerFive 1s linear infinite;
+            border: solid 1.5em #000000;
+            border-right: solid 1.5em transparent;
+            border-left: solid 1.5em transparent;
+            border-radius: 100%;
+            width: 0;
+            height: 0;
+          }
+          
+          @keyframes spinnerFive {
+            0% {
+              transform: rotate(0deg);
+            }
+            50% {
+              transform: rotate(60deg)
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+          /* Spinner 5 ends here */
+          
+          /* Spinner 6 starts here */
+          .spinner6 {
+            background: #000000;
+            border-radius: 50%;
+            height: 1em;
+            margin: .1em;
+            width: 1em;
+          }
+          
+          .p1 {
+            animation: fall 1s linear .3s infinite;
+          }
+          
+          .p2 {
+            animation: fall 1s linear .2s infinite;
+          }
+          
+          .p3 {
+            animation: fall 1s linear .1s infinite;
+          }
+          
+          .p4 {
+            animation: fall 1s linear infinite;
+          }
+          
+          @keyframes fall {
+            0% {
+              transform: translateY(-15px);
+            }
+            25%, 75% {
+              transform: translateY(0);
+            }
+            100% {
+              transform: translateY(-15px);
+            }
+          }
+          /* Spinner 6 ends here */
+          
+          @media (max-width: 600px) {
+            .container {
+              align-items: center;
+              flex-direction: column;
+            }
+            .canvas {
+              margin: 1em;
+            }
+          }</style>
+</body>
+</html>
