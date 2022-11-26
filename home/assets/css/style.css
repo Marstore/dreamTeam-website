@@ -157,8 +157,26 @@
     color: var(--white-1);
     padding-inline: 25px;
     border-radius: var(--radius-6);
+    
+    
   }
+
   
+
+  button:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+  a:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+  img:hover {
+  transform: scale(1.1);
+  transition: all 0.9s;
+}
   .btn-primary { background-image: var(--gradient-1); }
   
   .btn-secondary { background-image: var(--gradient-2); }
@@ -171,12 +189,7 @@
   }
   
   .btn-link:is(:hover, :focus) { letter-spacing: 0.3px; }
-  
-  
-  
-  
-  
-  
+
   .header .btn { display: none; }
   
   .header {
@@ -255,8 +268,6 @@
   
   .navbar-link:is(:hover, :focus) { color: var(--winter-sky); }
   
-
-  
   .hero {
     padding-block-start: calc(73px + var(--section-padding));
     background-color: var(--cultured-1);
@@ -300,11 +311,6 @@
     gap: 5px;
   }
   
-  
-  
-  
-  
- 
   .nnoticias { background-color: var(--white-1); }
   
   .noticias :is(.section-title, .section-text) { text-align: center; }
@@ -340,14 +346,7 @@
   
   .noticias-card .btn-link { color: var(--ultramarine); }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #FEATURES
-  \*-----------------------------------*/
-  
+
   .features { background-color: var(--white-2); }
   
   .features .section-text { margin-block: 10px 15px; }
@@ -389,14 +388,7 @@
     aspect-ratio: 1 / 0.71;
   }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #ABOUT
-  \*-----------------------------------*/
-  
+ 
   .about { text-align: center; }
   
   .about .section-text:first-of-type { margin-block: 5px 30px; }
@@ -462,13 +454,6 @@
     letter-spacing: 0;
   }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #STATS
-  \*-----------------------------------*/
   
   .stats { background-color: var(--cultured-2); }
   
@@ -742,20 +727,13 @@
   
   
   
-  
-  
-  
   @media (min-width: 768px) {
 
   
     body { font-size: 2rem; }
   
   
- 
-  
     :root {
-  
-      
   
       --fs-1: 5rem;
       --fs-2: 3.5rem;
@@ -764,14 +742,8 @@
     }
   
   
-  
-    
-  
     .container { max-width: 720px; }
   
-  
-  
-    
   
     .header .btn {
       font-size: 1.7rem;
@@ -1038,4 +1010,18 @@
   
     .app .btn-group { justify-content: flex-start; }
   
+  }
+
+  body::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);    
+    border-radius: 20px;       
+    border: 3px solid rgb(0, 0, 0);  
   }
